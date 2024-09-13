@@ -1,6 +1,9 @@
 <?php
 
 // task1
+echo "\n+++++++++
+task1
++++++++++\n\n";
 
 class A {
     public $b = 23;
@@ -36,7 +39,21 @@ varvar=$g,
 
 // task2
 
+echo "\n\n+++++++++
+task2
++++++++++";
 
+$a = 21 / 6;
+$c=$d=1;
+
+echo "
+21 / 6 = $a
+$c, $d
+";
+
+@($a /= 0);
+echo "3 / 0 no $a"
+;
 
 // task3
 
