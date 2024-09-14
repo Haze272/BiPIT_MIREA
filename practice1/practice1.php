@@ -147,5 +147,30 @@ echo "\ncomparing two points [$p1[0], $p1[1]] and [$p2[0], $p2[1]] nearest to [0
  * Дано натуральное число n. Переставить местами
  * первую и последнюю цифры этого числа.
  */
+echo "\n\n+++++++++
+task7
++++++++++";
+
+$n = rand(1, PHP_INT_MAX);
+
+echo "\nsource number is $n";
+
+function magicValue($value) {
+    $strN = strval($value);
+
+    if (strlen($strN) === 1) return $value;
+    else if (strlen($strN) > 1) {
+        $buffer = $strN[0];
+        $strN[0] = $strN[-1];
+        $strN[-1] = $buffer;
+
+        return intval($strN);
+    }
+    else return 0;
+}
+
+$magicedN = magicValue($n);
+
+echo "\nconverted number is $magicedN";
 
 ?>
