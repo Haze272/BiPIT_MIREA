@@ -51,13 +51,14 @@ echo "
 $c, $d
 ";
 
-@($a /= 0);
-echo "3 / 0 no $a"
-;
+//@($a /= 0);
+echo "3 / 0 no $a";
 
 // task3
 
-
+for ($i = 1; $i < 3; $i++) {
+    echo "i = $i";
+}
 
 // task4
 
