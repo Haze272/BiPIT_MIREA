@@ -5,10 +5,12 @@ echo "\n+++++++++
 task1
 +++++++++\n\n";
 
-class A {
+class A
+{
     public $b = 23;
 
-    public function toString() {
+    public function toString()
+    {
         return "Im instance of A!, $this->b";
     }
 }
@@ -34,8 +36,7 @@ object=$f,
 address=$g,
 varvar=$g,
 "
-.name
-;
+    . name;
 
 // task2
 
@@ -44,7 +45,7 @@ task2
 +++++++++";
 
 $a = 21 / 6;
-$c=$d=1;
+$c = $d = 1;
 
 echo "
 21 / 6 = $a
@@ -66,9 +67,9 @@ for ($i = 1; $i < 3; $i++) {
 
 $names = ['Esteban', 'Pedro', 'Gamimuli'];
 
-foreach ($names as $index => $val) {
-    echo "Hola, $val con numero $index"
-}
+foreach ($names as $index => $val):
+    echo "\nHola, $val con numero $index";
+endforeach;
 
 
 // task4
@@ -77,17 +78,23 @@ echo "\n\n+++++++++
 task4
 +++++++++";
 
+$number = rand(10, 99);
+
+echo "\nrand is $number \n";
+for ($i = 100; $i < 1000; $i++):
+    if ($i % $number == 0 && $i % 2 == 0):
+        echo "$i, ";
+    endif;
+endfor;
+
 
 // task5
-
 
 
 // task6
 
 
-
 // task7
-
 
 
 ?>
