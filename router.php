@@ -3,6 +3,10 @@
 $request = $_SERVER['REQUEST_URI'];
 $viewDir = '/';
 
+if (str_contains($request, "/practice1/answer")) {
+    require __DIR__ . $viewDir . 'practice1/' . 'practice1_part2_answer.php' . substr($request, 16);
+    return;
+}
 switch ($request) {
     case '':
     case '/':

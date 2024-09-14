@@ -1,3 +1,9 @@
+<?php
+$ratingAll=$_POST["ratingAll"];
+$ratingUI=$_POST["ratingUI"];
+$name=$_POST["respondentName"];
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,10 +14,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Practice1 answer!</h1>
+    <h1>Спасибо за ваше мнение, <?php echo $name; ?>!</h1>
 </body>
 </html>
 
-<?php
 
-?>
