@@ -104,13 +104,43 @@ $p2 = [rand(-20, 20), rand(-20, 20)];
 $distance = sqrt(pow($p2[0] - $p1[0], 2) + pow($p2[1] - $p1[1], 2));
 
 echo "\ndistance between [$p1[0], $p1[1]] and [$p2[0], $p2[1]] is $distance";
+
 // task6
 /*
  * Даны две точки с заданными:
  * абсциссой и ординатой. Составить алгоритм,
  * определяющий, которая из точек находится ближе к началу координат.
  */
+echo "\n\n+++++++++
+task6
++++++++++";
 
+function compareNearestToO($point1, $point2) {
+    $d1 = sqrt(pow(0 - $point1[0], 2) + pow(0 - $point1[1], 2));
+    $d2 = sqrt(pow(0 - $point2[0], 2) + pow(0 - $point2[1], 2));
+    echo "\nd1 is $d1";
+    echo "\nd2 is $d2";
+
+    if ($d1 > $d2) {
+        return $point2;
+    }
+    else if ($d1 < $d2) {
+        return $point1;
+    }
+    else if ($d1 == $d2) {
+        return 0;
+    }
+    else {
+        return new Error('Unexpected input');
+    }
+}
+
+$p1 = [rand(-20, 20), rand(-20, 20)];
+$p2 = [rand(-20, 20), rand(-20, 20)];
+
+$nearest = compareNearestToO($p1, $p2);
+
+echo "\ncomparing two points [$p1[0], $p1[1]] and [$p2[0], $p2[1]] nearest to [0, 0] is [$nearest[0], $nearest[1]]";
 
 // task7
 /*
