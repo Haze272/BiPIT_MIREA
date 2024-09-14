@@ -56,12 +56,26 @@ echo "3 / 0 no $a";
 
 // task3
 
+echo "\n\n+++++++++
+task3
++++++++++";
+
 for ($i = 1; $i < 3; $i++) {
     echo "i = $i";
 }
 
+$names = ['Esteban', 'Pedro', 'Gamimuli'];
+
+foreach ($names as $index => $val) {
+    echo "Hola, $val con numero $index"
+}
+
+
 // task4
 
+echo "\n\n+++++++++
+task4
++++++++++";
 
 
 // task5
